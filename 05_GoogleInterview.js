@@ -54,22 +54,24 @@ function hasPairWithSum2(arr, sum) {
 console.log(hasPairWithSum2([6, 4, 3, 2, 1, 7], 9));
 
 /*
-    Input hasPairWithSum2([1, 2, 4, 4], 8);
+    Input hasPairWithSum2([1, 2, 3, 4], 7);
 
     fist loop: mySet = [];
                mySet.has(1) => false
-               mySet.add(8 - 1)
+               mySet.add(7 - 1)
 
-    second loop: mySet = [7];
+    second loop: mySet = [6];
                mySet.has(2) => false
-               mySet.add(8-2)
+               mySet.add(7-2)
 
-    third loop: mySet = [7, 6];
-               mySet.has(4) => false
-               mySet.add(8-4)
-    forth loop: mySet = [7, 6, 4];
+    third loop: mySet = [6, 5];
+               mySet.has(3) => false
+               mySet.add(7-3)
+    forth loop: mySet = [6, 5, 4];
                mySet.has(4) => true
                return true      
+
+    Output true
 */
 
 /*
